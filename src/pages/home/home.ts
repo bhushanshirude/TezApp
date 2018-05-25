@@ -6,18 +6,16 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-private value :String;
   constructor(public navCtrl: NavController) {
 
   }
   search() {
-    console.log("=============>Search Bar Open<==============")
+    console.log("=============>Search Bar Open<==============");
   }
   add() {
-    console.log("=============>Add To Cart<==============")
-   this.value ='1';
+    console.log("=============>Add To Cart<==============");
   }
   profile() {
-    console.log("=============>See Profile<==============")
+    console.log("=============>See Profile<==============");
   }
 }

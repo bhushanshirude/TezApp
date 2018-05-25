@@ -1,9 +1,25 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Search</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
+    <ion-navbar>
+      <ion-title>
+        <img src="assets/imgs/icons.jpg"> Happy
+      </ion-title>
+      <ion-toolbar *ngIf="value =='searchbar'">
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+      <ion-buttons end>
+        <button ion-button (click)="search()">
+          <ion-icon name="search"></ion-icon>
+        </button>
+        <button ion-button (click)="add()">
+          <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+        </button>
+        <button ion-button (click)="profile()">
+          <img src="assets/imgs/profile.jpg" style="border-radius: 50%; height: 4.3vh; width: 4.3vh;">
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
     Coming Soon..................!
-</ion-content>
+  </ion-content>

@@ -1,3 +1,32 @@
 page-search {
+    // title csss 
+    .toolbar-title-ios{
+        margin-left: -6em;
+    }
+    // Images
+     img {
+        max-width: 100%;
+        border: 0;
+        border-radius: 10%;
+        height: 16px;
+        width: 26px;
+    }
+    .button{
+        border-radius: 50%;
+    }
+    // ios-searchbar
+    .toolbar-ios{
+        padding: 0px;
+      }
+
+// ion-searchbar
+.searchbar-md .searchbar-input {
+    padding: -1px 40px;
+    border-radius: 50px;
+    background-position: left 8px center;
+    font-size: 1.6rem;
+    color: #141414;
+    background-color: #fff;
+}
 
 }
