@@ -29,7 +29,7 @@ export class HomePage {
     {
       title: 'Slider6',
     }
-  ]
+  ];
   search() {
     console.log("=============>Search Bar Open<==============");
   }

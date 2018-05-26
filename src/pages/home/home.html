@@ -18,14 +18,17 @@
 </ion-header>
 
 <ion-content padding>
-    <a>image</a><ion-icon ios="ios-arrow-round-forward" md="md-arrow-forward"></ion-icon>
-   <ion-navbar>
-   
-     
+  <ion-row>
+    <a>image</a>
+    <ion-icon ios="ios-arrow-round-forward" md="md-arrow-forward"></ion-icon>
+  </ion-row>
+  <ion-navbar>
+
+
   </ion-navbar>
-  <ion-slides >
+  <ion-slides>
     <ion-slide *ngFor="let slide of slider">
-    {{slide.title}}
+      {{slide.title}}
     </ion-slide>
   </ion-slides>
 
