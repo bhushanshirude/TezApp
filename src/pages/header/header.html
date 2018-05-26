@@ -1,8 +1,8 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      <img src="assets/imgs/icons.jpg"> Happy
-    </ion-title>
+    <ion-toolbar *ngIf="value =='searchbar'">
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
     <ion-buttons end>
       <button ion-button (click)="search()">
         <ion-icon name="search"></ion-icon>
@@ -18,15 +18,5 @@
 </ion-header>
 
 <ion-content padding>
-    <a>image</a><ion-icon ios="ios-arrow-round-forward" md="md-arrow-forward"></ion-icon>
-   <ion-navbar>
-   
-     
-  </ion-navbar>
-  <ion-slides >
-    <ion-slide *ngFor="let slide of slider">
-    {{slide.title}}
-    </ion-slide>
-  </ion-slides>
-
+  Coming Soon..................!
 </ion-content>

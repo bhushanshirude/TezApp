@@ -15,4 +15,31 @@ page-home {
         border-radius: 50%;
     }
 
+    .toolbar-title-md {
+        padding: 0px 0px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #424242;
+    }
+    // arrow color
+    .ion-ios-arrow-round-forward:before {
+        margin-left: 13em;
+        color: red;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .ion-md-arrow-forward:before {
+        margin-left: 13em;
+        color: red;
+        cursor: pointer;
+    }
+    // image name Color
+    ion-app.ios [padding] {
+        padding: 16px;
+        color: green;
+    }   
+    a{
+        color:green;    
+    }
+
 }
