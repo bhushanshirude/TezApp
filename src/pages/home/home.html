@@ -22,14 +22,25 @@
     <a>image</a>
     <ion-icon ios="ios-arrow-round-forward" md="md-arrow-forward"></ion-icon>
   </ion-row>
-  <ion-navbar>
 
-
-  </ion-navbar>
-  <ion-slides>
-    <ion-slide *ngFor="let slide of slider">
-      {{slide.title}}
-    </ion-slide>
-  </ion-slides>
-
+  <ion-scroll scrollX="true" style="height:280px; width:100%;">
+    <div class="inner">
+      <ion-card *ngFor="let slide of slider">
+        <img src="{{slide.image}}" style="height: 50%;">
+      </ion-card>
+    </div>
+  </ion-scroll>
 </ion-content>
+
+<!-- <ion-navbar>
+    <ion-slides >
+      <ion-slide *ngFor="let slide of slider">
+        <ion-card >
+          <img src='{{slide.image}}'>
+            <ion-card-content>
+            <span>{{slide.title}}</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-navbar> -->

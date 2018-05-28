@@ -6,6 +6,37 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    Coming Soon..................!
+<ion-content>
+  <div class="bg">
+    <ion-icon name="list"></ion-icon>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="assets/imgs/chennai.jpg">
+        </ion-col>
+        <ion-col text-center>
+          <p> Vs </p>
+        </ion-col>
+        <ion-col>
+          <img src="assets/imgs/sunrisers.jpg">
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col text-center>
+          <h4>Live Match</h4>
+          <p>27
+            <sup>th</sup> May 2018</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-card *ngFor="let slide of slider">
+        <ion-col >
+            <img class="player" src="assets/imgs/profile.jpg">
+          </ion-col>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

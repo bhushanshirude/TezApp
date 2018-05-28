@@ -38,8 +38,21 @@ page-home {
         padding: 16px;
         color: green;
     }   
+    // image color green
     a{
         color:green;    
     }
-
+    // card image css
+    .swiper-slide img{
+        width: 80px;
+        height:70px;
+    }
+    .inner{
+        width:2000px;
+        height: 100%;
+    }
+    .ionc-card{
+        display: table-cell;
+        border: solid 1px red;
+    }
 }
