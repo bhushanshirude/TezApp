@@ -22,10 +22,10 @@
     <a>image</a>
     <ion-icon ios="ios-arrow-round-forward" md="md-arrow-forward"></ion-icon>
   </ion-row>
-
+  
   <ion-scroll scrollX="true" style="height:280px; width:100%;">
-    <div class="inner">
-      <ion-card *ngFor="let slide of slider">
+    <div class="inner" *ngFor="let slide of slider">
+      <ion-card >
         <img src="{{slide.image}}" style="height: 50%;">
       </ion-card>
     </div>
