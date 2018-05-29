@@ -6,42 +6,56 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  constructor(public navCtrl: NavController) {
-
-  }
+  public value: String;
+  constructor(public navCtrl: NavController) { }
+  // images on card repeated
   slider = [
     {
-      title: 'Slider1',
-      image:"assets/imgs/slide.jpg",
-      feedback:'Good',
+      title: 'Slide1',
+      image: "assets/imgs/slide.jpg",
+      feedback: 'Good',
     },
     {
-      title: 'Slider2',
-      image:'assets/imgs/slide.jpg ',
-      feedback:'Good',
+      title: 'Slide2',
+      image: 'assets/imgs/slide.jpg ',
+      feedback: 'Good',
     },
     {
-      title: 'Slider3',
-      image:'assets/imgs/slide.jpg ',
-      feedback:'Good',
+      title: 'Slide3',
+      image: 'assets/imgs/slide.jpg ',
+      feedback: 'Good',
     },
     {
-      title: 'Slider4',
-      image:'assets/imgs/slide.jpg ',
-      feedback:'Good',
+      title: 'Slide4',
+      image: 'assets/imgs/slide.jpg ',
+      feedback: 'Good',
     },
 
     {
-      title: 'Slider5',
-      image:'assets/imgs/slide.jpg ',
-      feedback:'Good',
+      title: 'Slide5',
+      image: 'assets/imgs/slide.jpg ',
+      feedback: 'Good',
     },
     {
-      title: 'Slider6',
-      image:'assets/imgs/slide.jpg ',
-      feedback:'Good',
-    }
-  ];
+      title: 'Slide6',
+      image: 'assets/imgs/slide.jpg ',
+      feedback: 'Good',
+    }];
+
+  // smile images card
+  smiles = [{
+    title:'1',
+    images:'assets/imgs/expression.jpg'
+  }, {
+    title:'2',
+    images:'assets/imgs/expression.jpg'
+  },
+  {
+    title:'3',
+    images:'assets/imgs/expression.jpg'
+  }];
+
+  // =============>header-Section<==============
   search() {
     console.log("=============>Search Bar Open<==============");
   }
@@ -51,4 +65,18 @@ export class HomePage {
   profile() {
     console.log("=============>See Profile<==============");
   }
+
+  // ================>ion-content<===============
+  up() {
+    console.log("===============thumbs-up==============");
+  }
+  down() {
+    console.log("===============thumbs-down==============");
+  }
+  happy() {
+    this.value = 'feedback';
+    console.log("===============happy==============");
+  }
+
 }
+

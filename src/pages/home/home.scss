@@ -1,58 +1,110 @@
 page-home {
-    // title csss 
+    // *******Header*******
+     // title csss 
     .toolbar-title-ios{
         margin-left: -6em;
     }
-    // Images
-     img {
+     // Images
+   ion-title img {
         max-width: 100%;
         border: 0;
         border-radius: 10%;
         height: 16px;
         width: 26px;
     }
-    .button{
-        border-radius: 50%;
-    }
-
-    .toolbar-title-md {
-        padding: 0px 0px;
-        font-size: 1.4rem;
-        font-weight: 500;
-        color: #424242;
-    }
-    // arrow color
+   
+ //  arrow color
     .ion-ios-arrow-round-forward:before {
         margin-left: 13em;
         color: red;
         font-size: 1em;
         cursor: pointer;
     }
+
     .ion-md-arrow-forward:before {
         margin-left: 13em;
         color: red;
         cursor: pointer;
     }
-    // image name Color
-    ion-app.ios [padding] {
-        padding: 16px;
-        color: green;
-    }   
-    // image color green
-    a{
+
+
+    // *************ion Content*****************
+ // image color green
+    span{
         color:green;    
     }
-    // card image css
-    .swiper-slide img{
-        width: 80px;
-        height:70px;
+    ion-card {
+        width: 6.8em !important;
+        display: inline-block;
+        border-radius: 50%;
     }
-    .inner{
-        width:2000px;
-        height: 100%;
+
+    ion-scroll {
+        min-height: 7.6em; 
+        height: 150px;        
+        .scroll-content {
+        padding: 0px !important;            
+        } 
     }
-    .ionc-card{
-        display: table-cell;
-        border: solid 1px red;
+     // ion-content image
+    img {
+        max-width: 100%;
+        border-radius: 10%;
+        cursor: pointer;
+        border: 0;
+    }
+  
+
+    .scroll-zoom-wrapper {
+        white-space: nowrap;
+    }    
+     .card-content-md {
+        padding: 7px 25px;
+    }
+
+
+    // **********ion card********************
+    // card ios
+    .card-content-ios {
+        padding: 10px 30px 0px;
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+    // thumbs-up
+    .ion-md-thumbs-up:before {
+        color: darkgrey;
+        cursor: pointer;
+    }
+    .ion-ios-thumbs-up:before{
+        color: darkgrey;
+        cursor: pointer;
+    }   
+
+     // thumbs-down
+     .ion-md-thumbs-down:before {
+        color: darkgrey;
+        cursor: pointer;
+    }
+    .ion-ios-thumbs-down:before{
+        color: darkgrey;
+        cursor: pointer;
+    }
+    // happy
+    .ion-md-happy:before{
+        color:darkgrey;
+        cursor: pointer;
+    }
+    .ion-ios-happy:before{
+        color:darkgrey;
+        cursor: pointer;
+    } 
+
+    .ion-md-happy:hover{
+        color: blue;
+        border-radius: 50%;
+    }
+
+    element.style {
+        width: 10px;
     }
 }

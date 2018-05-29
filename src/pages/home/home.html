@@ -17,30 +17,38 @@
   </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
   <ion-row>
-    <a>image</a>
+    <span>image</span>
     <ion-icon ios="ios-arrow-round-forward" md="md-arrow-forward"></ion-icon>
   </ion-row>
-  
-  <ion-scroll scrollX="true" style="height:280px; width:100%;">
-    <div class="inner" *ngFor="let slide of slider">
-      <ion-card >
-        <img src="{{slide.image}}" style="height: 50%;">
-      </ion-card>
-    </div>
-  </ion-scroll>
-</ion-content>
 
-<!-- <ion-navbar>
-    <ion-slides >
-      <ion-slide *ngFor="let slide of slider">
-        <ion-card >
-          <img src='{{slide.image}}'>
-            <ion-card-content>
-            <span>{{slide.title}}</span>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-    </ion-slides>
-  </ion-navbar> -->
+  <ion-scroll scrollX="true" direction="x">
+    <ion-card *ngFor="let slide of slider" alt="slide.title" style="border-radius: 10%;">
+      <img src="{{slide.image}}">
+      <ion-card-content>
+        {{slide.title}}
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" (click)="up()"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-button full outline">
+          <ion-icon ios="ios-thumbs-down" md="md-thumbs-down" (click)="down()"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <img src="assets/imgs/happy.png" (click)="happy()" style="width: 55%;">
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-scroll>
+  <ion-card *ngIf="value =='feedback'" style="border-radius: 8%; height: 20px; width: 20%;">
+      <ion-row >
+        <ion-col *ngFor="let smile of smiles">
+          <!-- <img src="{{smile.images}}" style="width: 10px; "> -->
+        </ion-col>
+      </ion-row>
+    </ion-card>
+</ion-content>
+<!-- <img src="" onmouserover="src=''" onmouseout="src=''"  onclick="src='assets/imgs/expression.jpg'"> -->
