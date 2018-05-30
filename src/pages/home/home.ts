@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { InformationPage } from '../information/information';
+import {Information2Page} from '../information2/information2';
 
 @Component({
   selector: 'page-home',
@@ -14,32 +16,40 @@ export class HomePage {
       title: 'Slide1',
       image: "assets/imgs/slide.jpg",
       feedback: 'Good',
+      page:InformationPage
     },
     {
       title: 'Slide2',
       image: 'assets/imgs/slide.jpg ',
       feedback: 'Good',
+      page:Information2Page
     },
     {
       title: 'Slide3',
       image: 'assets/imgs/slide.jpg ',
       feedback: 'Good',
+      page:Information2Page
     },
     {
       title: 'Slide4',
       image: 'assets/imgs/slide.jpg ',
       feedback: 'Good',
+      page:Information2Page
+
     },
 
     {
       title: 'Slide5',
       image: 'assets/imgs/slide.jpg ',
       feedback: 'Good',
+      page:Information2Page
     },
     {
       title: 'Slide6',
       image: 'assets/imgs/slide.jpg ',
       feedback: 'Good',
+      page:Information2Page
+
     }];
 
   // smile images card
@@ -78,5 +88,8 @@ export class HomePage {
     console.log("===============happy==============");
   }
 
+  information(page){
+    this.navCtrl.push(page);
+  }
 }
 

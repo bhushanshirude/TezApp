@@ -26,9 +26,10 @@
 
   <ion-scroll scrollX="true" direction="x">
     <ion-card *ngFor="let slide of slider" alt="slide.title" style="border-radius: 10%;">
-      <img src="{{slide.image}}">
+      <img src="{{slide.image}}" (click) ="information(slide.page)">
       <ion-card-content>
         {{slide.title}}
+        {{slide.page}}
       </ion-card-content>
       <ion-row>
         <ion-col>
