@@ -26,11 +26,17 @@
 
   <ion-scroll scrollX="true" direction="x">
     <ion-card *ngFor="let slide of slider" alt="slide.title" style="border-radius: 10%;">
-      <img src="{{slide.image}}" (click) ="information(slide.page)">
+      <img src="{{slide.image}}" (click)="information(slide.page)">
       <ion-card-content>
         {{slide.title}}
-        {{slide.page}}
       </ion-card-content>
+      <ion-card *ngIf="value =='feedback'" style="width: 4.8em !important; ">
+        <ion-row >
+          <ion-col *ngFor="let smile of smiles">
+            <img src="{{smile.images}}">
+          </ion-col> 
+        </ion-row>
+      </ion-card>
       <ion-row>
         <ion-col>
           <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" (click)="up()"></ion-icon>
@@ -44,12 +50,6 @@
       </ion-row>
     </ion-card>
   </ion-scroll>
-  <ion-card *ngIf="value =='feedback'" style="border-radius: 8%; height: 20px; width: 20%;">
-      <ion-row >
-        <ion-col *ngFor="let smile of smiles">
-          <!-- <img src="{{smile.images}}" style="width: 10px; "> -->
-        </ion-col>
-      </ion-row>
-    </ion-card>
+ 
 </ion-content>
 <!-- <img src="" onmouserover="src=''" onmouseout="src=''"  onclick="src='assets/imgs/expression.jpg'"> -->
