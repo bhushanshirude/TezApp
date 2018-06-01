@@ -3,7 +3,7 @@
       <ion-toolbar *ngIf="value =='searchbar'">
         <ion-searchbar></ion-searchbar>
       </ion-toolbar>
-      <ion-buttons end>
+      <ion-buttons end  *ngIf="value !=='searchbar'">
         <button ion-button (click)="search()">
           <ion-icon name="search"></ion-icon>
         </button>
