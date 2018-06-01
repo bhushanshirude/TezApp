@@ -1,22 +1,46 @@
 <ion-header>
-    <ion-navbar>
-      <ion-toolbar *ngIf="value =='searchbar'">
-        <ion-searchbar></ion-searchbar>
-      </ion-toolbar>
-      <ion-buttons end  *ngIf="value !=='searchbar'">
-        <button ion-button (click)="search()">
-          <ion-icon name="search"></ion-icon>
-        </button>
-        <button ion-button (click)="add()">
-          <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
-        </button>
-        <button ion-button (click)="profile()">
-          <img src="assets/imgs/profile.jpg" style="border-radius: 50%; height: 4.3vh; width: 4.3vh;">
-        </button>
-      </ion-buttons>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-    Coming Soon..................!
-  </ion-content>
+  <ion-navbar>
+    <ion-toolbar *ngIf="value =='searchbar'">
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+    <ion-buttons end *ngIf="value !=='searchbar'">
+      <button ion-button (click)="search()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button (click)="add()">
+        <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+      </button>
+      <button ion-button (click)="profile()">
+        <img src="assets/imgs/profile.jpg" style="border-radius: 50%; height: 4.3vh; width: 4.3vh;">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-segment>
+    <ion-segment-button value="kittens"  style="border-bottom: #2a7d2a  solid 2px;">
+      Dipak 
+    </ion-segment-button>
+    <ion-segment-button value="kittens" style="border-bottom: #2a7d2a  solid 2px;">
+      Vivek
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngIf="value =='searchbar'">
+    <ion-item *ngFor="let item of items" style=" cursor: pointer; margin-top:10px;" >
+      {{ item }}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+
+<!-- 
+<ion-toolbar *ngIf="value =='searchbar'">
+    <ion-searchbar></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+  </ion-toolbar> -->

@@ -41,4 +41,19 @@ page-search {
             background-size: 17px;
 
         }
+
+        ion-header ion-segment-button {
+            color: red;
+        }
+        ion-header .ion-segment-button {
+            color: red;
+        }
+
+        ion-segment-button {
+            color:black;
+        }
+
+        ion-segment .ion-segment-button {
+            color:black;
+        }
 }
