@@ -3,9 +3,7 @@ import { IonicPageModule } from 'ionic-angular';
 import { Information2Page } from './information2';
 
 @NgModule({
-  declarations: [
-    Information2Page,
-  ],
+  declarations: [],
   imports: [
     IonicPageModule.forChild(Information2Page),
   ],
